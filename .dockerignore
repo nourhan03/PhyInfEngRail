@@ -1,0 +1,58 @@
+# ملفات ومجلدات لا يتم نسخها إلى صورة Docker
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# حزم بايثون والبيئات الافتراضية
+venv/
+myenv/
+backup/
+BackUP/
+Cleaned Up/
+15-5/
+
+# ملفات نظام التشغيل
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ملفات المحررين
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ملفات Docker نفسها
+Dockerfile.simple
+Dockerfile.alt
+.git
+.github
+.gitignore
+
+# ملفات أخرى
+README.md
+LICENSE
+*.md
+see you another time/
+cursor files/ 
