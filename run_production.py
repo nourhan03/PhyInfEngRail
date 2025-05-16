@@ -7,8 +7,8 @@ from extensions import socketio, db
 # إنشاء تطبيق Flask
 app = create_app()
 
-# تعريف متغير PORT للتوافق مع Railway
-port = int(os.environ.get("PORT", 5000))
+# استخدام رقم ثابت للمنفذ (5000) بدلاً من متغير البيئة
+port = 5000
 
 def signal_handler(sig, frame):
     """معالجة إشارات الإنهاء لإغلاق التطبيق بشكل نظيف"""
