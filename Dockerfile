@@ -21,10 +21,9 @@ COPY . .
 
 # تعيين متغيرات البيئة
 ENV PYTHONUNBUFFERED=1
-ENV PORT=5000
 
 # فتح المنفذ المستخدم
 EXPOSE 5000
 
-# تشغيل التطبيق
+# تشغيل التطبيق - بدون استخدام متغير PORT$
 CMD ["gunicorn", "--worker-class", "eventlet", "-w", "1", "--bind", "0.0.0.0:5000", "run_production:app"] 
